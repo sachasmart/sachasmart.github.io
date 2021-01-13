@@ -49,7 +49,7 @@ if(trim($name) == '') {
 
 
 
-$address = 'sacha.smart@gmail.com';
+$address = 'hello@email.com';
 
 
 
