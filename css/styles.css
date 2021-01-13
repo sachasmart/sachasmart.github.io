@@ -274,9 +274,9 @@ _____________________________________________________*/
 }
 
 .slidingVertical span {
-    animation: topToBottom 12.5 linear infinite 0s;
-    -ms-animation: topToBottom 12.5 linear infinite 0s;
-    -webkit-animation: topToBottom 12.5 linear infinite 0s;
+    animation: topToBottom 12.5s linear infinite 0s;
+    -ms-animation: topToBottom 12.5s linear infinite 0s;
+    -webkit-animation: topToBottom 12.5s linear infinite 0s;
     background: linear-gradient(180deg, #ff9a9e, #fad0c4);
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
