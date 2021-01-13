@@ -274,9 +274,9 @@ _____________________________________________________*/
 }
 
 .slidingVertical span {
-    animation: topToBottom 12.5s linear infinite 0s;
-    -ms-animation: topToBottom 12.5s linear infinite 0s;
-    -webkit-animation: topToBottom 12.5s linear infinite 0s;
+    animation: topToBottom 12.5 linear infinite 0s;
+    -ms-animation: topToBottom 12.5 linear infinite 0s;
+    -webkit-animation: topToBottom 12.5 linear infinite 0s;
     background: linear-gradient(180deg, #ff9a9e, #fad0c4);
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
@@ -308,6 +308,7 @@ _____________________________________________________*/
     -ms-animation-delay: 10s;
     -webkit-animation-delay: 10s;
 }
+
 
 /*topToBottom Animation*/
 
@@ -486,7 +487,7 @@ p.sub-heading {
     font-size: 17px;
     text-align: center;
     font-family: 'Lora', Georgia, "Times New Roman", Times, serif;
-    padding-bottom: 36px;
+    padding-bottom: 15px;
 }
 
 .small {
@@ -1854,7 +1855,7 @@ img {
     font-style: italic;
     border: solid 2px #e44b43;
     padding: 9px 15px 10px 15px;
-    margin: 20px auto 34px auto;
+    margin: 2px auto 34px auto;
     width: 128px;
     height: 44px;
     font-size: 14px;
