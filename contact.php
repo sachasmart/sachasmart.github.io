@@ -13,41 +13,6 @@ $name = $_POST['name']; $email = $_POST['email']; $comments = $_POST['comments']
 
 
 
-if(trim($name) == '') {
-
-	exit('<div class="error_message">You must enter your name.</div>');
-
-} else if(trim($name) == 'Your Name') {
-
-	exit('<div class="error_message">You must enter your name.</div>');
-
-} else if(trim($email) == 'Email') {
-
-	exit('<div class="error_message">Please enter a valid email address.</div>');
-
-} else if(!tommus_email_validate($email)) {
-
-	exit('<div class="error_message">You have entered an invalid e-mail address.</div>');
-
-} else if(trim($comments) == 'Tell us what you think!') {
-
-	exit('<div class="error_message">Please enter your message.</div>');
-
-} else if(trim($comments) == '') {
-
-	exit('<div class="error_message">Please enter your message.</div>');
-	
-} else if( strpos($comments, 'href') !== false ) {
-
-	exit('<div class="error_message">Please leave links as plain text.</div>');
-	
-} else if( strpos($comments, '[url') !== false ) {
-
-	exit('<div class="error_message">Please leave links as plain text.</div>');
-
-} if(get_magic_quotes_gpc()) { $comments = stripslashes($comments); }
-
-
 
 $address = 'sacha.smart@gmail.com';
 
