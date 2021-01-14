@@ -258,9 +258,10 @@ _____________________________________________________*/
 /*Sentence*/
 .sentence {
     text-align: center;
+    text-indent: -4em;
     color: #f1f1f2;
     font-style: italic;
-    display: inline;
+    display: block;
 
 
 }
