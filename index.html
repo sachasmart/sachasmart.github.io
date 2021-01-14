@@ -411,16 +411,13 @@
                 </div>
                 <div class="col1-1 centered">
                     <div id="contact">
-                        <form method="POST" action="contact.php" name="contactform" id="contactform" autocomplete="off">
+                        <form method="POST" action="https://formspree.io/f/xeqpvdlr" name="contactform" id="contactform" autocomplete="off">
                             <fieldset>
-                                <label for="name" accesskey="U"><span class="required">Your Name</span></label>
-                                <input name="name" type="text" id="name" size="30" title="Your Name" />
-                                <label for="email" accesskey="E"><span class="required">Email</span></label>
-                                <input name="email" type="text" id="email" size="30" title="Email" />
-                                <label for="comments" accesskey="C"><span class="required">Tell us what you think!</span></label>
-                                <textarea name="comments" cols="40" rows="3" id="comments" title="Tell us what you think!"></textarea>
-                                <input type="submit" class="submit" id="submit" value="Submit" />
-                                <span id="message"></span>
+                                <label>Your Email</label>
+                                <input type="text" name="_replyto">
+                                <label>What do you think?</label>
+                                <textarea name="message"></textarea>
+                                <button type="submit">Send</button>
                             </fieldset>
                         </form>
                     </div>
