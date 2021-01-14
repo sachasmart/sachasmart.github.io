@@ -13,7 +13,21 @@ $name = $_POST['name']; $email = $_POST['email']; $comments = $_POST['comments']
 
 
 
+if(trim($name) == '') {
 
+	exit('<div class="error_message">You must enter your name.</div>');
+
+} else if(trim($name) == 'Your Name') {
+
+	exit('<div class="error_message">You must enter your name.</div>');
+
+} else if(trim($email) == 'Email') {
+
+	exit('<div class="error_message">Please enter a valid email address.</div>');
+
+} else if(!tommus_email_validate($email)) {
+
+	exit('<div class="error_message">You have entered an invalid e-mail address.</div>');
 
 
 
