@@ -411,17 +411,17 @@
                 </div>
                 <div class="col1-1 centered">
                     <div id="contact">
-                        <form method="POST" action="contact.php" name="contactform" id="contactform" autocomplete="off">
-                            <fieldset>
-                                <label for="name" accesskey="U"><span class="required">Your Name</span></label>
-                                <input name="name" type="text" id="name" size="30" title="Your Name" />
-                                <label for="email" accesskey="E"><span class="required">Email</span></label>
-                                <input name="email" type="text" id="email" size="30" title="Email" />
-                                <label for="comments" accesskey="C"><span class="required">Tell me what you think!</span></label>
-                                <textarea name="comments" cols="40" rows="3" id="comments" title="Tell us what you think!"></textarea>
-                                <input type="submit" class="submit" id="submit" value="Submit" />
-                                <span id="message"></span>
+                        <form id="contactform" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/xeqpvdlr" method="post">
+                            <fieldset id="fs-frm-inputs">
+                                <label for="full-name">Full Name</label>
+                                <input type="text" name="name" id="full-name" placeholder="Name" required="">
+                                <label for="email-address">Email Address</label>
+                                <input type="email" name="_replyto" id="email-address" placeholder="Email Address" required="">
+                                <label for="message">Message</label>
+                                <textarea rows="3" cols="40" name="comments" id="comments" placeholder="Tell me what you think!" required=""></textarea>
+                                <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
                             </fieldset>
+                            <input type="submit" value="Submit" class="submit" id="submit">
                         </form>
                     </div>
                 </div>
@@ -429,7 +429,7 @@
         </section>
         <footer>
             <div class="container clearfix">
-                <p><span class="alignleft small">© 2021, Sacha Smart. All Rights Reserved.</span> <span class="alignright small">Connect with me&nbsp;&nbsp;&nbsp; <a href="#" target="_blank" class="social_icon email"></a></span> </p>
+                <p><span class="alignleft small">© 2021, Sacha Smart. All Rights Reserved.</span> <span class="alignright small">Connect with me&nbsp;&nbsp;&nbsp; <a href="mailto:sacha.smart@gmail.com" target="" class="social_icon email"></a></span> </p>
             </div>
         </footer>
         <script src="js/jquery-1.11.2.min.js" type="text/javascript"></script>
