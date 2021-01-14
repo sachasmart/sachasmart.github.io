@@ -289,6 +289,7 @@ _____________________________________________________*/
     animation-delay: 2.5s;
     -ms-animation-delay: 2.5s;
     -webkit-animation-delay: 2.5s;
+    text-indent: 0px;
 }
 
 .slidingVertical span:nth-child(3) {
@@ -307,6 +308,7 @@ _____________________________________________________*/
     animation-delay: 10s;
     -ms-animation-delay: 10s;
     -webkit-animation-delay: 10s;
+    text-indent: 0px;
 }
 
 
