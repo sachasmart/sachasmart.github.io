@@ -253,10 +253,15 @@ _____________________________________________________*/
     float: left;
 }
 
+/*-- tsParticles */
 
+/*----------Particles*/
 
+#particles-js {
+    background: ;
+    height: 100vh;
 
-
+}
 
 /* Rotating Animation
 _____________________________________________________*/
