@@ -3,10 +3,11 @@
 
     <div class="col1-1 centered">
 
-        <!--<div class="flexslider"></div>!-->
 
         <figure class="images">
-            <li><img src="ajax/images/digital_portfolio/waterfall.png" alt="Jane Street Bridge Expansion Project" /></li>
+            <li><img src="ajax/images/digital_portfolio/terrafir.png" alt="Terrafir" />
+            </li>
+
 
         </figure>
 
@@ -14,26 +15,43 @@
     </div>
     <div class="big-break"></div>
     <div class="col1-1 centered border-bottom">
-        <h4 class="with-p-below">Jane Street Crossing Project</h4>
-        <p class="small"><i>Project Management</i></p>
+        <h4 class="with-p-below">Terrafir</h4>
+        <p class="small"><i>Software Development (Personal)</i></p>
         <button class="next-ajax" href="ajax/project2.html">Next</button>
+
+
     </div>
 
     <div class="col1-3">
         <h5>Background</h5>
-        <p>The Rockcliffe area was chronically impacted by seasonal flooding, and many residents could no longer claim insurance for their properties.</p>
-
+        <p>Terrafir is a personal project that I have turned into a business. It is a platform the leverages Open Policy Agent, to assess a Terraform plan. Terrafir is completely self-hosted on my Homelab's Kubernetes cluster. The idea began when I was assessing colleagues Terraform deployments and there was not a clear solution in terms of best practices for using Terraform to provision cloud resources. </p>
     </div>
 
     <div class="col1-3">
         <h5>Process</h5>
-        <p>Collaborating with the City of Toronto and Toronto and Region Conservation Authority, an application was submitted to Infrastructure Canada for a $47-million large scale infrastructure project to reduce the impact of flooding. Included in the application were steps that would facilitate a broader flood mitigation system</p>
+        <p>I began looking into Policy-as-Code and exploring Open Policy Agent (OPA). There was minimal information on how OPA could be used in partnership with Terraform, as OPA is seemingly geared towards Kubernetes deployments. From personal research and industry trends, I codified a library of policies as an engine that could be exposed to an API. I then went about creating the platform and the infrastructure that would support it. I made it my goal to have this platform completely self-hosted, but use all the concepts that I have grown to expect from cloud deployments - yet I didn't want to be beholden to a cloud. </p>
     </div>
 
     <div class="col1-3">
         <h5>Result</h5>
-        <p>Historic federal government investment in York South-Weston that will ensure safety for residents, employ local community members, and spur innovative green technology. </p>
+        <p>Terrafir runs within my self-hosted Kubernetes cluster. The stack includes:</p>
+        <ul>
+            <li>• Typescript</li>
+            <li>• Vue</li>
+            <li>• NodeJs</li>
+            <li>• Open Policy Agent</li>
+            <li>• Traefk</li>
+            <li>• Nginx Reverse Proxy</li>
+            <li>• Minio (static site bucket)</li>
+            <li>• Terraform (manage Minio and Cloudflare)</li>
+            <li>• Jenkins</li>
+            <li>• Grafana</li>
+            <li>• Prometheus</li>
+            <li>• Alert Manager</li>
+            <li>• Certificate Management</li>
+        </ul>
     </div>
+    
 
     <div class="clear"></div>
 
