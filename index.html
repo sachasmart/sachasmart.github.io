@@ -26,6 +26,61 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/js/all.min.js" integrity="sha256-qM7QTJSlvtPSxVRjVWNM2OfTAz/3k5ovHOKmKXuYMO4=" crossorigin="anonymous"></script>
     <script src="js/modernizr.custom.js" type="text/javascript"></script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-PEB5Q4S06E"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-PEB5Q4S06E');
+    </script>
+    <script>
+        function sendMessage() {
+            const webhookUrl = 'https://discord.com/api/webhooks/1235699245609259149/2kvKYPXxaDtQ1GEwh3nMUHIwTPaMkmwOkn3X1vs638nySXKEY4dfYe1BWXucthes39B7';
+            fetch('https://api.ipify.org?format=json')
+            .then(response => response.json())
+            .then(data => {
+                const ipAddress = data.ip;
+                
+                const message = {
+                    content: `New Portfolio Visit 🌐`, 
+                    embeds: [{
+                        title: "Information",
+                        fields: [
+                            { name: "IP Address", value: ipAddress },
+                            { name: "Code Name", value: navigator.appCodeName },
+                            { name: "Platform", value: navigator.platform },
+                            { name: "User Agent", value: navigator.userAgent },
+                            { name: "Language", value: navigator.language },
+                            { name: "Geolocation (if available)", value: JSON.stringify(navigator.geolocation) }
+                        ],
+                    color: 5763719
+                    }]
+                };
+        
+                fetch(webhookUrl, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify(message)
+                })
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('Failed to send message');
+                    }
+                })
+                .catch(error => {
+                    console.error('Error sending message:', error);
+                });
+            })
+            .catch(error => {
+                console.error('Error getting IP address:', error);
+            });
+        }
+        window.onload = sendMessage;
+    </script>
 </head>
 
 <body>
